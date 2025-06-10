@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Birthday Cake</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
-   hello world 
+<body class="body2">
+
+  <div id="birthday-cake">
+  <div class="cake">
+    <div class="middle"></div>
+    <div class="chocs"></div>
+    <div class="top"></div>
+  </div>
+  <div class="candles">
+    <div class="flame"></div>
+    <div class="flame2"></div>
+    <div class="flame3"></div>
+    
+    <div class="shadows"></div>
+    <div class="text">Happy Birthday Love!</div>
+  </div>
+  <p class="text2">
+   
+      
+      My Liege has made such a nice cake for you, i can already tell he loves you so much
+      . Please make a wish before blowing the candles(*click the candle flame)
+      After you blow the candles you can click on proceed
+      
+      <br/>
+      
+      
+    
+ 
+  </p>
+
+  
+  
+  
+</div>
+
+<button class="button2" onclick="window.location.href = 'page3.html'">Proceed</button>
+
+<!-- hearts -->
+  <div class="heart-container">
+  <div class="heart" style="left: 5%; animation-delay: 0s; animation-duration: 7s;"></div>
+<div class="heart" style="left: 10%; animation-delay: 1.2s; animation-duration: 9s;"></div>
+<div class="heart" style="left: 15%; animation-delay: 2.6s; animation-duration: 6.5s;"></div>
+<div class="heart" style="left: 20%; animation-delay: 0.9s; animation-duration: 10s;"></div>
+<div class="heart" style="left: 25%; animation-delay: 3.5s; animation-duration: 8s;"></div>
+<div class="heart" style="left: 30%; animation-delay: 1.1s; animation-duration: 7.2s;"></div>
+<div class="heart" style="left: 35%; animation-delay: 2.4s; animation-duration: 9.3s;"></div>
+<div class="heart" style="left: 40%; animation-delay: 0.7s; animation-duration: 10s;"></div>
+<div class="heart" style="left: 45%; animation-delay: 1.9s; animation-duration: 7.8s;"></div>
+<div class="heart" style="left: 50%; animation-delay: 0.3s; animation-duration: 6.5s;"></div>
+<div class="heart" style="left: 55%; animation-delay: 2.2s; animation-duration: 8.4s;"></div>
+<div class="heart" style="left: 60%; animation-delay: 0.5s; animation-duration: 7.1s;"></div>
+<div class="heart" style="left: 65%; animation-delay: 3.3s; animation-duration: 10.5s;"></div>
+<div class="heart" style="left: 70%; animation-delay: 1.6s; animation-duration: 6.9s;"></div>
+<div class="heart" style="left: 75%; animation-delay: 0.8s; animation-duration: 9.8s;"></div>
+<div class="heart" style="left: 80%; animation-delay: 2.8s; animation-duration: 8.3s;"></div>
+<div class="heart" style="left: 85%; animation-delay: 1.3s; animation-duration: 7.4s;"></div>
+<div class="heart" style="left: 90%; animation-delay: 0.2s; animation-duration: 9.6s;"></div>
+<div class="heart" style="left: 95%; animation-delay: 3.1s; animation-duration: 10s;"></div>
+</div>
+
+
+
+
+
+  <script>
+    $(document).ready(function() {
+      $(".candles").click(function() {
+        $(".flame").animate({ "opacity": 0 }, "fast");
+        $(".flame2").animate({ "opacity": 0 }, "fast");
+        $(".flame3").animate({ "opacity": 0 }, "fast");
+        $(".text").animate({ "top": "10px", "opacity": 1 }, "fast");
+      });
+    });
+  </script>
+
 </body>
 </html>
